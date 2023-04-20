@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={classes.mainContainer}>
       <div className={classes.leftSection}>
         <div>
-          <img src="../images/brand-logo-yellow.svg" alt="logo" />
+          <img src="images/brand-logo-yellow.svg" alt="logo" />
         </div>
         <div>
           <p>

@@ -23,7 +23,7 @@ class HeadderCartButton extends Component {
     return (
       <div>
         <button onClick={this.toggleCart}>
-          <img src="/images/cart.svg" alt="cart logo" />
+          <img src="images/cart.svg" alt="cart logo" />
           <span>Cart</span>
           <span>{cartCount}</span>
         </button>

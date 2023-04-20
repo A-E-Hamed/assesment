@@ -16,13 +16,13 @@ const MainNavigation = ({ cartItems, conuter }) => {
         </div>
         <div>
           <button type="button">
-            <img src="/images/wishlist.svg" alt="wishlist logo" />
+            <img src="images/wishlist.svg" alt="wishlist logo" />
             <span>Whishlist</span>
           </button>
         </div>
         <div>
           <button type="button">
-            <img src="/images/login.svg" alt="wlogin logo" />
+            <img src="images/login.svg" alt="wlogin logo" />
             <span>Login</span>
           </button>
         </div>
