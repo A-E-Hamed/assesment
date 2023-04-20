@@ -3,9 +3,9 @@ import classes from "./SimilarProducts.module.scss";
 
 const SimilarProduct = (props) => {
   return (
-    <div className={classes.main_container}>
+    <div className={classes.mainContainer}>
       <div className={classes.card}>
-        <div className={classes.product_picture}>
+        <div className={classes.productPicture}>
           <img src={props.image} alt="disc" />
         </div>
         <div>
@@ -15,7 +15,7 @@ const SimilarProduct = (props) => {
           <div>
             <RatingStars />
           </div>
-          <div className={classes.price_control}>
+          <div className={classes.priceControl}>
             <p> {props.price}</p>
             <img src="images/adidasLogo.png" alt="Logo" />
           </div>

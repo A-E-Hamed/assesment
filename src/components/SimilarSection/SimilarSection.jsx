@@ -15,12 +15,12 @@ const SimilarSection = () => {
   ));
 
   return (
-    <div className={classes.main_container}>
+    <div className={classes.mainContainer}>
       <div>
         <h2>Similar Products</h2>
         <p>You might like these products also</p>
       </div>
-      <div className={classes.small_container}>{productList}</div>
+      <div className={classes.smallContainer}>{productList}</div>
     </div>
   );
 };

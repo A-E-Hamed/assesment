@@ -2,16 +2,15 @@ import HeadderCartButton from "../HeaderCartButton/HeaderCartButton";
 import classes from "./MainNavigation.module.scss";
 
 const MainNavigation = ({ cartItems, conuter }) => {
-  const { container, searchBar, buttonBlock } = classes;
   return (
-    <div className={container}>
-      <div className={searchBar}>
+    <div className={classes.container}>
+      <div className={classes.searchBar}>
         <input type="search" placeholder="Search" />
       </div>
       <div>
         <img src="images/adidasLogo.png" alt="Logo" />
       </div>
-      <div className={buttonBlock}>
+      <div className={classes.buttonBlock}>
         <div>
           <HeadderCartButton cartItems={cartItems} cartCount={conuter} />
         </div>

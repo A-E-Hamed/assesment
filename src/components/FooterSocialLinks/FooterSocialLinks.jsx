@@ -1,9 +1,8 @@
 import classes from "./FooterSocialLinks.module.scss";
 
 const FooterSocialLinks = () => {
-  const { socialMediaLinks } = classes;
   return (
-    <div className={socialMediaLinks}>
+    <div className={classes.socialMediaLinks}>
       <ul>
         <li>
           <div>

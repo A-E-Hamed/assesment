@@ -13,19 +13,19 @@ const Home = ({
   const products = productItem?.map((product, idx) => (
     <React.Fragment key={++idx}>
       <div className={classes.container}>
-        <div className={classes.img_container}>
+        <div className={classes.imgContainer}>
           <Slider />
         </div>
-        <div className={classes.product_info}>
+        <div className={classes.productInfo}>
           <div>
             <h1>{product.name}</h1>
             {product.description}
           </div>
-          <div className={classes.price_control_container}>
+          <div className={classes.priceControlContainer}>
             <div>
               <RatingStars />
             </div>
-            <div className={classes.price_control}>
+            <div className={classes.priceControl}>
               <div>
                 <h3>Price:</h3>
               </div>
@@ -35,9 +35,9 @@ const Home = ({
             </div>
           </div>
           <hr></hr>
-          <div className={classes.size_container}>
+          <div className={classes.sizeContainer}>
             <h3>Size</h3>
-            <div className={classes.size_section}>
+            <div className={classes.sizeSection}>
               <div>S</div>
               <div>M</div>
               <div>L</div>
@@ -46,33 +46,33 @@ const Home = ({
           </div>
           <hr></hr>
           <div>
-            <div className={classes.main_container}>
-              <div className={classes.counter_block}>
+            <div className={classes.mainContainer}>
+              <div className={classes.counterBlock}>
                 <button
                   onClick={handleDecrement}
-                  className={classes.min_button}
+                  className={classes.minButton}
                 >
                   -
                 </button>
                 <span>{quantity}</span>
                 <button
                   onClick={handleIncrement}
-                  className={classes.plus_button}
+                  className={classes.plusButton}
                 >
                   +
                 </button>
               </div>
-              <div className={classes.cart_block}>
+              <div className={classes.cartBlock}>
                 <div>
                   <button
                     onClick={() => addToCartHandler(product)}
-                    className={classes.add_button}
+                    className={classes.addButton}
                   >
                     Add To Cart
                   </button>
                 </div>
                 <div>
-                  <button className={classes.pick_button}>
+                  <button className={classes.pickButton}>
                     Pickup from store
                   </button>
                 </div>

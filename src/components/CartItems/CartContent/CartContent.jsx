@@ -3,7 +3,6 @@ const CartContent = ({ onRemoveFromCart, cartItems }) => {
     <div key={++idx}>
       <h3>{item.name}</h3>
       <p>${item.price}</p>
-      <button onClick={() => onRemoveFromCart(item)}>Remove from Cart</button>
     </div>
   ));
   return <div>{!cartItems ? <p>Your cart is empty.</p> : cartList}</div>;

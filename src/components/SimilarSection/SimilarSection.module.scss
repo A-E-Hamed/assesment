@@ -1,10 +1,12 @@
-.small_container {
+.mainContainer {
+  margin-left: 290px;
+  margin-top: 20px;
+}
+
+.smallContainer {
   display: flex;
   margin: 3rem;
   text-align: center;
   width: 800px;
 }
 
-.main_container {
-  margin-left: 250px;
-}

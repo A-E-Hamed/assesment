@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Modal from "../Modal/Modal";
 import CartItems from "../CartItems/CartItems";
-// import Cart from "./Cart/Cart";
-// import Modal from "./Cart/Modal";
+
 
 class HeadderCartButton extends Component {
   constructor(props) {

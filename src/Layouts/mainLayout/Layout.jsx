@@ -74,7 +74,6 @@ class Layout extends Component {
   render() {
     return (
       <>
-        {console.log(this.state)}
         <MainNavigation
           cartItems={this.state.cartItems}
           conuter={this.state.cartTotal}
