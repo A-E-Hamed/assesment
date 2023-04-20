@@ -1,0 +1,55 @@
+.mainContainer {
+  display: flex;
+  margin-left: 60px;
+  padding: 0;
+}
+.leftSection {
+  width: 40%;
+  margin-left: 1rem;
+  margin-right: 2.5rem;
+  padding-top: 2.5rem;
+  border-right: 1px solid rgb(175, 175, 175);
+}
+.leftSection p {
+  width: 500px;
+}
+
+.rightSection {
+  margin-top: 1rem;
+  width: 500px;
+}
+
+.rightSection h2 {
+  color: white;
+}
+
+.rightSection input {
+  width: 350px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.linkSection {
+  display: flex;
+}
+
+.linkList {
+  width: 100%;
+  border-right: 1px solid rgb(175, 175, 175);
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.socialMediaLinks {
+  float: right;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}

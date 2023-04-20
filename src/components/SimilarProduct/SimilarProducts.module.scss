@@ -1,0 +1,38 @@
+.main_container {
+  text-align: center;
+}
+
+.card {
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: white;
+  height: 330px;
+  width: 70%;
+
+  img {
+    width: 130px;
+    height: 150px;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.price_control {
+  align-items: center;
+
+  p {
+    float: left;
+    margin-left: 5px;
+    margin-top: 8px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 5px;
+  }
+}

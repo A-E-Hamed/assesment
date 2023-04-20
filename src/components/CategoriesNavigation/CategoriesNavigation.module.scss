@@ -1,0 +1,16 @@
+.container {
+  background-color: black;
+  align-items: center;
+  height: 30px;
+}
+.container ul {
+  display: flex;
+  list-style: none;
+  margin-left: 200px;
+  padding-top: 8px;
+}
+
+.container li {
+  margin-left: 60px;
+  color: white;
+}

@@ -1,0 +1,17 @@
+.socialMediaLinks {
+  ul {
+    list-style: none;
+    li {
+      display: flex;
+      padding: 10px;
+      a {
+        text-decoration: none;
+        padding-left: 15px;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
