@@ -1,0 +1,35 @@
+.mainContainer {
+  display: flex;
+  background-color: #fff100;
+  height: 50px;
+  align-items: center;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  div {
+    margin-left: 50px;
+  }
+
+  .menuLogo {
+    margin-left: 240px;
+    margin-top: 5px;
+  }
+
+  .mainLogo {
+    margin-top: 5px;
+    margin-left: 15px;
+    img{
+        width: 70px;
+        height: 40px;
+    }
+  }
+
+  .rightSection {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+}

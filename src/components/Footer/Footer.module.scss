@@ -29,11 +29,10 @@
   }
 
   input {
-    width: 450px;
+    flex-grow: 1;
     height: 40px;
     border-radius: 30px;
     padding-left: 20px;
-    margin-top: 10px;
   }
 }
 
@@ -61,4 +60,23 @@
   a {
     text-decoration: none;
   }
+}
+
+.subBtn{
+display: flex;
+padding: .5rem .8rem;
+align-items: center;
+gap: 10px;
+background-color: #fff100;
+border-radius: 25px;
+height: 36px;
+position: absolute;
+right: 5px;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.searchBar{
+  display: flex;
+  position: relative;
 }

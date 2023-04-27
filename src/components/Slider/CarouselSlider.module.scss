@@ -1,4 +1,8 @@
 .test {
-  width: 280px;
-  height: 300px;
+  width: 350px;
+  :glopal(.carousel .carousel-slider){
+    height: 400px;
+    
+  }
+  
 }

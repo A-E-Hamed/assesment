@@ -1,31 +1,42 @@
 .container {
   display: flex;
-  height: 40px;
+  height: 25px;
   align-items: center;
   margin-left: 250px;
   margin-top: 20px;
+  align-items: center;
+  img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .searchBar {
   width: 200px;
   height: 35px;
   margin-right: 180px;
-  
+  display: flex;
+  position: relative;
+  img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
 }
+
 
 .searchBar input {
   width: 200px;
   height: 100%;
   border-radius: 25px;
-  padding-left: 20px;
+  padding-left: 30px;
+  
 }
 
-.container img {
-  width: 50px;
-  height: 50px;
-}
-
-.buttonBlock {
+.container .buttonBlock {
   width: 300px;
   margin-left: 180px;
   display: flex;

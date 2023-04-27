@@ -5,6 +5,7 @@ const MainNavigation = ({ cartItems, conuter }) => {
   return (
     <div className={classes.container}>
       <div className={classes.searchBar}>
+        <img src="images/search.svg" alt="search" />
         <input type="search" placeholder="Search" />
       </div>
       <div>

@@ -18,7 +18,7 @@ const SimilarSection = () => {
     <div className={classes.mainContainer}>
       <div>
         <h2>Similar Products</h2>
-        <p>You might like these products also</p>
+        <p>You may like these products also</p>
       </div>
       <div className={classes.smallContainer}>{productList}</div>
     </div>

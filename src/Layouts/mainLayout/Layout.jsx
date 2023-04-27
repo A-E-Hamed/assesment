@@ -5,6 +5,7 @@ import SimilarSection from "../../components/SimilarSection/SimilarSection";
 import { footerContainer } from "./Layout.module.scss";
 import Footer from "../../components/Footer/Footer";
 import Home from "../../pages/Home";
+import TopBar from "../../components/TopBar/TopBar";
 class Layout extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,7 @@ class Layout extends Component {
         name: "Adidas Shirt",
         description:
           "Adidas Black shirt Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        price: "9999 LE",
+        price: "9,999",
         image: "/images/shirt1.jpg",
       },
     ],
@@ -74,6 +75,7 @@ class Layout extends Component {
   render() {
     return (
       <>
+      <TopBar />
         <MainNavigation
           cartItems={this.state.cartItems}
           conuter={this.state.cartTotal}

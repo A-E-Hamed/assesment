@@ -12,13 +12,30 @@ const SimilarProduct = (props) => {
           <p> {props.description}</p>
         </div>
         <div>
-          <div>
-            <RatingStars />
-          </div>
           <div className={classes.priceControl}>
-            <p> {props.price}</p>
+            <div>
+              <h4>
+                {" "}
+                {props.price} <p>LE</p>
+              </h4>
+              <div className={classes.price}>
+                <div className={classes.saleSection}>
+                  <p>{props.price} LE</p>
+                  <div className={classes.sale}>
+                    <p>30% off</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <img src="images/adidasLogo.png" alt="Logo" />
           </div>
+        </div>
+        <div className={classes.ratingSection}>
+          <RatingStars />
+          <h5>4.2 of 5</h5>
+        </div>
+        <div className={classes.bottomSection}>
+          <p>Pick up from: genena mall</p>
         </div>
       </div>
     </div>

@@ -18,19 +18,26 @@ const Home = ({
         </div>
         <div className={classes.productInfo}>
           <div>
-            <h1>{product.name}</h1>
-            {product.description}
+            <img src="images/adidasLogo.png" alt="Logo" />
+            <h4>{product.description}</h4>
+            <p>Men</p>
           </div>
-          <div className={classes.priceControlContainer}>
-            <div>
+          <div className={classes.middleContainer}>
+            <div className={classes.ratingContainer}>
               <RatingStars />
+              <h4>4.5 of 5</h4>
+              <p>22 Rates</p>
             </div>
             <div className={classes.priceControl}>
-              <div>
-                <h3>Price:</h3>
+              <div className={classes.priceTag}>
+                <h2>{product.price}</h2>
+                <p>LE</p>
               </div>
-              <div>
-                <h4>{product.price}</h4>
+              <div className={classes.price}>
+                <p>{product.price} LE</p>
+              </div>
+              <div className={classes.sale}>
+                <p>30% off</p>
               </div>
             </div>
           </div>
@@ -38,20 +45,26 @@ const Home = ({
           <div className={classes.sizeContainer}>
             <h3>Size</h3>
             <div className={classes.sizeSection}>
-              <div>S</div>
-              <div>M</div>
-              <div>L</div>
-              <div>XL</div>
+              <div>Small</div>
+              <div>Medium</div>
+              <div>Large</div>
+              <div>X Large</div>
+              <div>XX Large</div>
+            </div>
+          </div>
+          <hr></hr>
+          <div className={classes.colorImgContainer}>
+            <h3>Color</h3>
+            <div className={classes.colorImg}>
+              <img src="images/shirt6.jpg" alt="shirt" />
             </div>
           </div>
           <hr></hr>
           <div>
-            <div className={classes.mainContainer}>
+            <div className={classes.quentityContainer}>
+            <h3>Quentity</h3>
               <div className={classes.counterBlock}>
-                <button
-                  onClick={handleDecrement}
-                  className={classes.minButton}
-                >
+                <button onClick={handleDecrement} className={classes.minButton}>
                   -
                 </button>
                 <span>{quantity}</span>
