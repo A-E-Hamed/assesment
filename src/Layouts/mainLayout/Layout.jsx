@@ -6,6 +6,7 @@ import { footerContainer } from "./Layout.module.scss";
 import Footer from "../../components/Footer/Footer";
 import Home from "../../pages/Home";
 import TopBar from "../../components/TopBar/TopBar";
+import BreadCrumb from "../../components/BreadCraumb/BreadCrumb";
 class Layout extends Component {
   constructor(props) {
     super(props);
@@ -75,12 +76,13 @@ class Layout extends Component {
   render() {
     return (
       <>
-      <TopBar />
+        <TopBar />
         <MainNavigation
           cartItems={this.state.cartItems}
           conuter={this.state.cartTotal}
         />
         <CategoriesNavigation />
+        <BreadCrumb />
         <Home
           productItem={this.state.products}
           handleIncrement={this.handleIncrement}
@@ -88,7 +90,6 @@ class Layout extends Component {
           addToCartHandler={this.addToCartHandler}
           quantity={this.state.quantity}
         />
-        <hr />
         <SimilarSection />
         <div className={footerContainer}>
           <Footer />

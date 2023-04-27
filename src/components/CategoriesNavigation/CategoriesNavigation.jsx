@@ -1,17 +1,20 @@
 import classes from "./CategoriesNavigation.module.scss";
+import Container from "../Container/Container";
 
 const CategoriesNavigation = (props) => {
   return (
     <div className={classes.container}>
-      <ul>
-        <li>Men</li>
-        <li>Women</li>
-        <li>Unisex</li>
-        <li>Kids</li>
-        <li>Best Sellers</li>
-        <li>New Arrivals</li>
-        <li>Offers</li>
-      </ul>
+      <Container>
+        <ul>
+          <li>Men</li>
+          <li>Women</li>
+          <li>Unisex</li>
+          <li>Kids</li>
+          <li>Best Sellers</li>
+          <li>New Arrivals</li>
+          <li>Offers</li>
+        </ul>
+      </Container>
     </div>
   );
 };

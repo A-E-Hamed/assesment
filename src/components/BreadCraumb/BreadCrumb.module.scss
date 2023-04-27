@@ -1,0 +1,15 @@
+.mainContainer {
+  border-bottom: 0.5px solid #5757565d;
+  padding: 21.5px 0;
+  .BreadCrumbContainer {
+    display: flex;
+    gap: 7px;
+  }
+  p {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .prodName {
+    text-decoration: none;
+  }
+}

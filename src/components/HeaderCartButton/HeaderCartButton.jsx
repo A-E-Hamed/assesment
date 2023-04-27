@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Modal from "../Modal/Modal";
 import CartItems from "../CartItems/CartItems";
-
+import { MdOutlineShoppingBasket } from "react-icons/md";
+import classes from "../MainNavigation/MainNavigation.module.scss";
 
 class HeadderCartButton extends Component {
   constructor(props) {
@@ -23,9 +24,11 @@ class HeadderCartButton extends Component {
     return (
       <div>
         <button onClick={this.toggleCart}>
-          <img src="images/cart.svg" alt="cart logo" />
+          <div className={classes.cartIconWrapper}>
+            <MdOutlineShoppingBasket size={25} />
+            <span className={classes.cartCounter}>{cartCount}</span>
+          </div>
           <span>Cart</span>
-          <span>{cartCount}</span>
         </button>
         {this.state.isOpen && (
           <Modal>

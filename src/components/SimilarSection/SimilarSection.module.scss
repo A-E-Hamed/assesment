@@ -1,16 +1,12 @@
 .mainContainer {
-  margin-left: 200px;
-  margin-top: 20px;
-  h2{
+  padding: 20px 0;
+  h2 {
     color: #542e90;
   }
-
- 
 }
 
 .smallContainer {
+  margin-top: 20px;
   display: flex;
-  margin: 3rem;
-  width: 800px;
+  justify-content: space-between;
 }
-

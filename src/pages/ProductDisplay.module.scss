@@ -3,9 +3,8 @@
   border-radius: 14px;
   background-color: white;
   margin: 25px;
-  margin-left: 250px;
   display: flex;
-
+  justify-content: center;
   hr {
     color: rgb(238, 238, 238);
   }
@@ -25,18 +24,18 @@
   width: 400px;
   padding-left: 20px;
   padding-right: 20px;
-
+  h4 {
+    padding: 10px 0;
+  }
+  p {
+    padding: 10px 0;
+  }
   img {
     width: 50px;
     height: 40px;
   }
 
-  h4 {
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  p {
+  del {
     color: grey;
   }
 }
@@ -62,21 +61,19 @@
 .priceControl {
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
-
+  justify-content: space-between;
   p {
     margin-right: 50px;
-    margin-top: 5px;
     font-size: smaller;
   }
 
   .sale {
-    background-color: #fff100;
-    width: 50px;
-
     p {
-      width: 60px;
+      background-color: #fff100;
+      padding: 0.2rem 0.3rem;
       color: black;
+      border-radius: 5px;
+      font-weight: 600;
     }
   }
 }
@@ -109,17 +106,17 @@
 
   div {
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-right: 25px;
-    margin-left: 0px;
-    padding-top: 15px;
-    height: 45px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
     font-size: x-small;
-    border-style: solid;
-    border-width: 0.5px;
+    color: #542e90;
+    font-weight: 600;
     border-radius: 50%;
-    border-color: rgb(226, 226, 226);
+    border: 0.5px solid rgba(226, 226, 226, 0.8);
   }
 
   div:hover {
@@ -131,6 +128,7 @@
 .colorImgContainer {
   margin-top: 10px;
   margin-bottom: 10px;
+  
 }
 
 .colorImg {
@@ -142,11 +140,14 @@
   border-width: 0.5px;
   border-radius: 50%;
   border-color: rgb(226, 226, 226);
+  display: flex;
 
   img {
     border-radius: 50%;
     height: 100%;
     width: 100%;
+    margin-right: 10px;
+
   }
 }
 .colorImg:hover {
@@ -167,13 +168,20 @@
   align-items: center;
   margin-top: 5px;
   margin-bottom: 5px;
-
+  background-color: #f5f5f5;
+  width: max-content;
+  padding: 0.3rem 0.3rem;
+  border-radius: 90px;
+  color: #542e90;
+  font-weight: 600;
   .minButton {
     width: 30px;
     height: 30px;
     background-color: #fff100;
     margin-right: 60px;
     border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
   }
 
   .plusButton {
@@ -182,6 +190,8 @@
     background-color: #fff100;
     margin-left: 60px;
     border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
   }
 }
 
@@ -199,9 +209,11 @@
   .addButton {
     background-color: #542e90;
     color: white;
+    font-weight: 700;
   }
 
   .pickButton {
+    font-weight: 700;
     background-color: #fff100;
   }
 }

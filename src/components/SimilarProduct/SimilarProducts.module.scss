@@ -1,50 +1,55 @@
-.mainContainer {
-}
-
 .card {
-  padding: 1rem;
-  margin-right: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 14px;
+  padding: 5px 5px 15px 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
   background-color: white;
-  height: 330px;
   width: 230px;
-
-  img {
-    width: 200px;
+  .desc {
+    padding: 10px;
+  }
+  img:not(.logo) {
+    border-radius: 8px;
+    width: 100%;
     height: 150px;
     object-fit: cover;
     object-position: top;
   }
+  .logo {
+    object-fit: contain;
+  }
 
   p {
     margin-bottom: 0px;
-    font-size: small;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
   }
 }
 
 .priceControl {
   align-items: center;
   display: flex;
-
+  justify-content: space-between;
   p {
     font-size: x-small;
     color: #542e90;
-    margin-top: 5px;
-    margin-left: 2px;
   }
 
   h4 {
     display: flex;
-    margin-right: 100px;
+    align-items: flex-end;
     margin-top: 8px;
     color: #542e90;
+    gap: 5px;
+    p {
+      color: inherit;
+      font-weight: 600;
+    }
   }
 
   img {
-    width: 40px;
+    width: 50px;
     height: 40px;
-    margin-right: 5px;
   }
 }
 
@@ -54,35 +59,46 @@
 
 .saleSection {
   display: flex;
-
+  flex-grow: 1;
+  gap: 10px;
   p {
     font-size: small;
     color: gray;
-    margin-right: 5px;
     margin-left: 0px;
   }
 
   .sale {
     background-color: #fff100;
-    margin-left: 15px;
-    p {
-      margin-left: 0px;
-      margin-bottom: 2px;
-    }
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .ratingSection {
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  justify-content: center;
+  margin: 10px 0;
   h5 {
-    margin-left: 20px;
     margin-top: 5px;
   }
 }
 
 .bottomSection {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: 30px;
-  margin-top: 10px;
+  p {
+    font-weight: 400;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+del {
+  color: grey;
+  font-size: 12px;
 }
