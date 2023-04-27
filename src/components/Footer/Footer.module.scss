@@ -10,7 +10,7 @@
   padding-top: 2.5rem;
   border-right: 1px solid rgb(175, 175, 175);
 
-  img{
+  img {
     margin-top: 20px;
   }
 
@@ -30,9 +30,11 @@
 
   input {
     flex-grow: 1;
-    height: 40px;
+    height: 45px;
     border-radius: 30px;
     padding-left: 20px;
+    border: none;
+    outline: none;
   }
 }
 
@@ -62,21 +64,21 @@
   }
 }
 
-.subBtn{
-display: flex;
-padding: .5rem .8rem;
-align-items: center;
-gap: 10px;
-background-color: #fff100;
-border-radius: 25px;
-height: 36px;
-position: absolute;
-right: 5px;
-top: 50%;
-transform: translateY(-50%);
+.subBtn {
+  display: flex;
+  padding: 0.5rem 0.8rem;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff100;
+  border-radius: 25px;
+  height: 36px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.searchBar{
+.searchBar {
   display: flex;
   position: relative;
 }
